@@ -21,6 +21,6 @@ dict = huffmandict(symbols, prob);
 encoded_audio = huffmanenco(sig_quantized, dict);
 
 %% Save the compressed audio as a WAV file
-audiowrite('swamp_compressed.mp3', encoded_audio, Fs);
+audiowrite('swamp_compressed_16.mp3', encoded_audio, Fs);
 % dequantized_audio = encoded_audio * (2^8-1);
 % audiowrite('swamp_deq.mp3', dequantized_audio, Fs);
